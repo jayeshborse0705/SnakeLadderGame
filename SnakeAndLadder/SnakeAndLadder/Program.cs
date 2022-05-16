@@ -10,12 +10,19 @@ namespace SnackLadderGame
 
             Console.WriteLine("Welcome to snake and ladder problem");
             SnakeAndLadder srating_Point = new SnakeAndLadder();
-            srating_Point.StartPlay();
+            int Position = srating_Point.StartPlay();
             RollingDie rollingDie = new RollingDie();
-            rollingDie.NumGenerator();
+            int DiceNum = rollingDie.NumGenerator();
+            Console.WriteLine("DiceNum={0}, Position={1}", DiceNum, +Position);
+            CheckForOptioncs checkForOptioncs = new CheckForOptioncs();
+            checkForOptioncs.CheckingOption(ref DiceNum, ref Position);
+            Console.WriteLine("DiceNum={0}, Position={1}", DiceNum, +Position);
+            PlayerPositionTill_100 position100 = new PlayerPositionTill_100();
+            position100.Position100(ref DiceNum, ref Position);
+            Console.WriteLine("DiceNum={0}, Position={1}", DiceNum, +Position);
+
         }
+
 
     }
 }
-
-
