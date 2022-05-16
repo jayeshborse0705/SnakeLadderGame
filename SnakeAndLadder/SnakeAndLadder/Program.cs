@@ -11,11 +11,11 @@ namespace SnackLadderGame
             Console.WriteLine("Welcome to snake and ladder problem");
             SnakeAndLadder srating_Point = new SnakeAndLadder();
             srating_Point.StartPlay();
-            Console.ReadKey();
-
-
+            RollingDie rollingDie = new RollingDie();
+            rollingDie.NumGenerator();
         }
-
 
     }
 }
+
+

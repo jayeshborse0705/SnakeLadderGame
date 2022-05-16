@@ -1,16 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace SnackLadderGame
+namespace SnakeAndLadder
 {
     internal class RollingDie
     {
-        public void NumGenerator()
-        {
-            Random LudoNum = new Random();
-            int Num = LudoNum.Next(1, 6);
-            Console.WriteLine("You got the number: " +Num);
-        }
     }
 }
